@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Notes &#8226; uiOS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <link href="index.css" rel="stylesheet">
+        <link href="cdn/css/gg.css" rel="stylesheet">
+        <script src="cdn/js/vanilla.js"></script>
+        <script src="cdn/js/mvc.js"></script>
+        <script src="cdn/js/on.js"></script>
+        <script src="cdn/js/router.js"></script>
+        <script src="cdn/js/touch.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body class="background-color-fff flex flex-direction-column" data-theme="meridiem">
+        <boot id="boot"></boot>
+        <header class="-tablet-line-height-36px font-size-12px line-height-18px position-relative width-100pct">
+            <picture class="border-bottom-2px-solid border-color-f0 box-sizing-border-box bottom-0 position-absolute width-100pct"></picture>
+            <picture class="background-color-ccc display-none height-100pct left-0 position-fixed top-0 width-100pct z-index-1" data-tap="event.target.closest('header').classList.remove('-tap')"></picture>
+            <row class="z-index-2">
+                <card>
+                    <column>
+                        <box class="-tilde--hover--tap-display-flex z-index-4" onmouseover="mouseover.menu.item(event.target)" onmouseout="mouseout.menu.item(event.target)" data-tap="tap.menu.item(event.target)">
+                            <row>
+                                <text class="padding-x-10px">
+                                    <span>File</span>
+                                </text>
+                            </row>
+                        </box>
+                        <box class="-after--hover--tap-display-flex -hover-display-flex -mobile-margin-top-36px -tablet-margin-top-36px background-color-f0 border-1px-solid border-color-ccc display-none line-height-24px margin-top-18px position-absolute z-index-1 width-227px z-index-3">
+                            <column class="background-color-f2 margin-left-30px">
+                                <text class="padding-x-5px">
+                                    <span>New</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>New Window</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Open</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Save</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Save As</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Page Setup</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Print</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Exit</span>
+                                </text>
+                            </column>
+                        </box>
+                    </column>
+                </card>
+                <card>
+                    <column>
+                        <box class="-tilde--hover--tap-display-flex z-index-2" onmouseover="mouseover.menu.item(event.target)" onmouseout="mouseout.menu.item(event.target)" data-tap="tap.menu.item(event.target)">
+                            <row>
+                                <text class="padding-x-10px">
+                                    <span>Edit</span>
+                                </text>
+                            </row>
+                        </box>
+                        <box class="-hover-display-flex -mobile-margin-top-36px -tablet-margin-top-36px background-color-f0 border-1px-solid border-color-ccc display-none line-height-24px margin-top-18px position-absolute z-index-1 width-227px">
+                            <column class="background-color-f2 margin-left-30px">
+                                <text class="padding-x-5px">
+                                    <span>Undo</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Cut</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Copy</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Paste</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Delete</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Search with Google...</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Find...</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Find Next</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Find Previous</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Replace...</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Go To...</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Select All</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Time/Date</span>
+                                </text>
+                            </column>
+                        </box>
+                    </column>
+                </card>
+                <card>
+                    <column>
+                        <box class="-tilde--hover--tap-display-flex z-index-2" onmouseover="mouseover.menu.item(event.target)" onmouseout="mouseout.menu.item(event.target)" data-tap="tap.menu.item(event.target)">
+                            <row>
+                                <text class="padding-x-10px">
+                                    <span>Format</span>
+                                </text>
+                            </row>
+                        </box>
+                        <box class="-hover-display-flex -mobile-margin-top-36px -tablet-margin-top-36px background-color-f0 border-1px-solid border-color-ccc display-none line-height-24px margin-top-18px position-absolute z-index-1 width-227px">
+                            <column class="background-color-f2 margin-left-30px">
+                                <text class="padding-x-5px">
+                                    <span>Word Wrap</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Font...</span>
+                                </text>
+                            </column>
+                        </box>
+                    </column>
+                </card>
+                <card>
+                    <column>
+                        <box class="-tilde--hover--tap-display-flex z-index-2" onmouseover="mouseover.menu.item(event.target)" onmouseout="mouseout.menu.item(event.target)" data-tap="tap.menu.item(event.target)">
+                            <row>
+                                <text class="padding-x-10px">
+                                    <span>View</span>
+                                </text>
+                            </row>
+                        </box>
+                        <box class="-hover-display-flex -mobile-margin-top-36px -tablet-margin-top-36px background-color-f0 border-1px-solid border-color-ccc display-none line-height-24px margin-top-18px position-absolute z-index-1 width-227px">
+                            <column class="background-color-f2 margin-left-30px">
+                                <text class="padding-x-5px">
+                                    <span>Zoom</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Status Bar</span>
+                                </text>
+                            </column>
+                        </box>
+                    </column>
+                </card>
+                <card>
+                    <column>
+                        <box class="-tilde--hover--tap-display-flex z-index-2" onmouseover="mouseover.menu.item(event.target)" onmouseout="mouseout.menu.item(event.target)" data-tap="tap.menu.item(event.target)">
+                            <row>
+                                <text class="padding-x-10px">
+                                    <span>Help</span>
+                                </text>
+                            </row>
+                        </box>
+                        <box class="-hover-display-flex -mobile-margin-top-36px -tablet-margin-top-36px background-color-f0 border-1px-solid border-color-ccc display-none line-height-24px margin-top-18px position-absolute z-index-1 width-227px">
+                            <column class="background-color-f2 margin-left-30px z-index-2">
+                                <text class="padding-x-5px">
+                                    <span>View Help</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>Send Feedback</span>
+                                </text>
+                                <text class="padding-x-5px">
+                                    <span>About Notepad</span>
+                                </text>
+                            </column>
+                        </box>
+                    </column>
+                </card>
+            </row>
+        </header>
+        <main class="flex-1">
+            <page class="width-100pct" data-pages="/" data-root="/">
+                <textarea class="-focus-outline-unset border-unset resize-none width-100pct"></textarea>
+            </page>
+        </main>
+    </body>
+</html>
